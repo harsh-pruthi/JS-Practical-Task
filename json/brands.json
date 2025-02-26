@@ -1,0 +1,28 @@
+{
+    "brands": [
+        {
+            "name": "Audi",
+            "image_src": "assets/explore-prem-brands/1.svg"
+        },
+        {
+            "name": "BMW",
+            "image_src": "assets/explore-prem-brands/2.svg"
+        },
+        {
+            "name": "Ford",
+            "image_src": "assets/explore-prem-brands/3.svg"
+        },
+        {
+            "name": "Mercedes Benz",
+            "image_src": "assets/explore-prem-brands/4.svg"
+        },
+        {
+            "name": "Peugeot",
+            "image_src": "assets/explore-prem-brands/5.svg"
+        },
+        {
+            "name": "Volkswagen",
+            "image_src": "assets/explore-prem-brands/6.svg"
+        }
+    ]
+}

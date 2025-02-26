@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="font-dmSans m-0 p-0 border-box">
+
+    <!-- Hero-Section -->
+    <main class="relative">
+    
+        <div class="nav-container flex absolute justify-around p-5 w-full">
+            <div class="nav-left flex gap-4 align-center justify-center">
+                <img src="assets/main/logo.svg" alt="brand-icon">
+                <p class="text-m font-regular">Home</p>
+                <p class="text-m font-regular">Listings</p>
+                <p class="text-m font-regular">Blog</p>
+                <p class="text-m font-regular">Pages</p>
+                <p class="text-m font-regular">About</p>
+                <p class="text-m font-regular">Contact</p>
+            </div>
+            <div class="nav-right flex gap-4 items-center justify-center">
+                <div class="flex gap-1 items-center justify-center">
+                    <img src="assets/main/icons/sign-in.png" alt="sign-in">
+                    <button class="text-white">Sign In</button>
+                </div>
+                <div class="button-submit">
+                    <button class="text-white border-1 border-[white] px-2 py-1 rounded-lg">Submit Listing</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section absolute mx-20 my-20 p-20 flex flex-col gap-4 space-around">
+                <p class="text-m">Find cars for sale and for rent near you</p>
+                <p class="text-4xl font-bold">4,675 Vehicles</p>
+                <p class="text-4xl font-bold">Available</p>
+                <div class="buttons-container flex gap-4 items-center justify-start">
+                    <button class="flex items-center justify-center gap-2 p-3 bg-[#405FF2] rounded-xl">
+                        <p class="text-lg text-white font-regular">View Inventory</p>
+                        <img src="assets/main/whitearrow.svg" alt="whitearrow">
+                    </button>
+                    <button class="flex items-center justify-center gap-2 p-3 bg-white border-1 border-[#050B20] rounded-xl">
+                        <p>Contact Us</p>
+                        <img src="assets/main/bluearrow.svg" alt="blue-arrow">
+                    </button>
+                </div>
+                <div class="sub-section flex flex-col gap-3">
+                    <p class="text-regular font-regular">Or Browse Featured Model</p>
+                    <div class="btn-categories flex gap-2">
+                        <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
+                            <img src="assets/main/car-logos/suv.svg" alt="">
+                            <p>SUV</p>
+                        </button>
+                        <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
+                            <img src="assets/main/car-logos/sedan.svg" alt="">
+                            <p>Sedan</p>
+                        </button>
+                        <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
+                            <img src="assets/main/car-logos/hatchback.svg" alt="">
+                            <p>Hatchback</p>
+                        </button>
+                        <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
+                            <img src="assets/main/car-logos/coupe.svg" alt="">
+                            <p>Coupe</p>
+                        </button>
+                        <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
+                            <img src="assets/main/car-logos/hybrid.svg" alt="">
+                            <p>Hybrid</p>
+                        </button>
+                       
+                    </div>
+                </div>
+        </div>
+
+        
+    
+                    
+            <img src="assets/main/car-cover.svg" alt="">
+            
+            
+        </div>
+
+    </main>
+
+    
+    <!-- Explore-Brands -->
+    <section class="explore-brands">
+        <div class="brands-heading flex justify-between mx-5 p-20 gap-2">
+            <p class="text-3xl font-bold">Explore Our Premium Brands</p>
+            <button class="flex gap-2 items-center justify-center p-2 ">
+                <p class="text-m font-medium">Show all brands</p>
+                <img src="assets/explore-prem-brands/arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="brands-container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 mx-20 px-10 flex justify-left flex-col">
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/1.svg" alt="brand-1">
+                <p class="text-l font-semibold">Audi</p>
+            </div>
+
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/2.svg" alt="brand-1">
+                <p class="text-l font-semibold">BMW</p>
+            </div>
+
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/3.svg" alt="brand-1">
+                <p class="text-l font-semibold">Ford</p>
+            </div>
+
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/4.svg" alt="brand-1">
+                <p class="text-l font-semibold">Mercedes Benz</p>
+            </div>
+
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/5.svg" alt="brand-1">
+                <p class="text-l font-semibold">Peugeot</p>
+            </div>
+
+            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/explore-prem-brands/6.svg" alt="brand-1">
+                <p class="text-l font-semibold">Volkswagen</p>
+            </div>
+    </section>
+
+    <!-- Our-Services -->
+    <section class="our-services p-20 mx-5 flex justify-left flex-col">
+        <div class="services-heading">
+            <p class="text-3xl font-bold">Our Services</p>
+        </div>
+        <div class="images-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 p-10">
+            <!-- Card1 -->
+            <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/our-services/car1.svg" class="rounded-2xl" alt="service-1">
+                <p class="text-l font-semibold">2024 BMW ALPINA XB7 with exclusive…</p>
+                <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
+                    accumsan nec.</p>
+                <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
+                    <p class="text-[#405FF2] font-medium">View</p>
+                    <img src="assets/our-services/arrow.svg" alt="">
+                </button>
+            </div>
+            
+            <!-- Card2 -->
+            <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/our-services/car2.svg" class="rounded-2xl" alt="service-1">
+                <p class="text-l font-semibold">BMW X6 M50i is designed to exceed your…</p>
+                <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
+                    accumsan nec.</p>
+                <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
+                    <p class="text-[#405FF2] font-medium">View</p>
+                    <img src="assets/our-services/arrow.svg" alt="">
+                </button>
+            </div>
+
+            <!-- Card3 -->
+            <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                <img src="assets/our-services/car3.svg" class="rounded-2xl" alt="service-1">
+                <p class="text-l font-semibold">BMW X5 Gold 2024 Sport Review: Light o…</p>
+                <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
+                    accumsan nec.</p>
+                <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
+                    <p class="text-[#405FF2] font-medium">View</p>
+                    <img src="assets/our-services/arrow.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Get-Fair-Price -->
+    <section class="fair-sell-section p-10 mx-10 mb-10 grid grid-cols-1 md:grid-cols-2 gap-15">
+        <div class="left-container">
+            <img src="assets/sell/1.svg" class="" alt="videocar">
+        </div>
+        <div class="right-container flex flex-col gap-8">
+            <div class="text-top flex flex-col gap-2">
+                <p class="text-3xl font-semibold">Get A Fair Price For Your</p>
+                <p class="text-3xl font-semibold">Car Sell To Us Today</p>
+            </div>
+            <div class="text-between flex flex-col gap-2">
+                <p class="text-md font-regular">We are committed to providing our customers with exceptional service,</p>
+                <p class="text-md font-regular">competitive pricing, and a wide range of.</p>
+            </div>
+            <div class="tolist">
+                <ul class="flex flex-col gap-2">
+                    <li class="flex gap-2">
+                        <img src="assets/sell/tick.svg" alt="">
+                        <p class="text-md font-medium">We are the UK’s largest provider, with more patrols in more places</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <img src="assets/sell/tick.svg" alt="">
+                        <p class="text-md font-medium">You get 24/7 roadside assistance</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <img src="assets/sell/tick.svg" alt="">
+                        <p class="text-md font-medium">We fix 4 out of 5 cars at the roadside</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-me">
+                <button class="bg-[#405FF2] p-4 rounded-lg flex gap-2 items-center justify-center">
+                    <p class="text-white text-md font-medium">Get Started</p>
+                    <img src="assets/sell/diagonal.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facts-Section -->
+    <section class="facts-section grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 p-10 text-center">
+        <div class="fact-1">
+            <p class="font-bold text-2xl">836M</p>
+            <p class="text-ml">CARS FOR SALE</p>
+        </div>
+        <div class="fact-2">
+            <p class="font-bold text-2xl">738M</p>
+            <p class="text-ml">DEALER REVIEWS</p>
+        </div>
+        <div class="fact-3">
+            <p class="font-bold text-2xl">100M</p>
+            <p class="text-ml">VISITORS PER DAY</p>
+        </div>
+        <div class="fact-4">
+            <p class="font-bold text-2xl">238M</p>
+            <p class="text-ml">VERIFIED DEALERS</p>
+        </div>
+    </section>
+
+    <div class="w-[100%] mb-10 h-[1px] center bg-[#E1E1E1]"></div>
+
+
+    <!-- Featured Listing -->
+    <section class="featured-listing p-10 mx-10 mb-10 flex flex-col gap-8">
+        <div class="featured-heading flex justify-between">
+            <p class="text-3xl font-bold">Featured Listing</p>
+            <button class="flex gap-2 items-center justify-center p-2 ">
+                <p class="text-m font-medium">View All</p>
+                <img src="assets/featured-listing/arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="filter-buttons flex gap-4 border-b-2 border-[#E1E1E1] pb-4">
+            <button class="instock"><p class="font-medium text-l">In Stock</p></button>
+            <button class="used-cars"><p class="font-medium text-l">Used Cars</p></button>
+            <button class="new-cars"><p class="font-medium text-l">New Cars</p></button>
+        </div>
+
+        <div class="cards-container grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div class="card flex flex-col gap-2 rounded-lg border-1 border-[#E1E1E1]">
+                <img src="assets/featured-listing/cars/car1.svg" class="rounded-t-lg" alt="">
+                <div class="text-content p-2 gap-2">
+                    <p class="font-medium text-lg">T-Cross - 2023</p>
+                    <p class="font-regular text-sm">4.0 D5 PowerPulse Momentum 5dr AW…</p>
+                </div> 
+
+                <div class="fact-icons p-2 border-t-1 border-b-1 border-[#E1E1E1] flex gap-2 justify-around items-center">
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/mil.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">15 Miles</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/fuel.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">Petrol</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/gear.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">CVT</p>
+                    </div>
+                </div>
+
+                <div class="checkout p-2 flex gap-2 items-center justify-around">
+                    <p class="text-lg font-bold">$15000</p>
+                    <button class="flex gap-2 items-center justify-center p-2">
+                        <p class="text-md text-[#405FF2]">View Details</p>
+                        <img src="assets/featured-listing/icons/blue-arrow.svg" alt="blue-arrow">
+                    </button>
+            </div>
+            </div>
+
+            <div class="card flex flex-col gap-2 rounded-lg border-1 border-[#E1E1E1]">
+                <img src="assets/featured-listing/cars/car2.svg" class="rounded-t-lg" alt="">
+                <div class="text-content p-2 gap-2">
+                    <p class="font-medium text-lg">T-Cross - 2023</p>
+                    <p class="font-regular text-sm">4.0 D5 PowerPulse Momentum 5dr AW…</p>
+                </div> 
+
+                <div class="fact-icons p-2 border-t-1 border-b-1 border-[#E1E1E1] flex gap-2 justify-around items-center">
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/mil.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">15 Miles</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/fuel.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">Petrol</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/gear.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">CVT</p>
+                    </div>
+                </div>
+
+                <div class="checkout p-2 flex gap-2 items-center justify-around">
+                    <p class="text-lg font-bold">$15000</p>
+                    <button class="flex gap-2 items-center justify-center p-2">
+                        <p class="text-md text-[#405FF2]">View Details</p>
+                        <img src="assets/featured-listing/icons/blue-arrow.svg" alt="blue-arrow">
+                    </button>
+            </div>
+            </div>
+
+            <div class="card flex flex-col gap-2 rounded-lg border-1 border-[#E1E1E1]">
+                <img src="assets/featured-listing/cars/car3.svg" class="rounded-t-lg" alt="">
+                <div class="text-content p-2 gap-2">
+                    <p class="font-medium text-lg">T-Cross - 2023</p>
+                    <p class="font-regular text-sm">4.0 D5 PowerPulse Momentum 5dr AW…</p>
+                </div> 
+
+                <div class="fact-icons p-2 border-t-1 border-b-1 border-[#E1E1E1] flex gap-2 justify-around items-center">
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/mil.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">15 Miles</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/fuel.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">Petrol</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/gear.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">CVT</p>
+                    </div>
+                </div>
+
+                <div class="checkout p-2 flex gap-2 items-center justify-around">
+                    <p class="text-lg font-bold">$15000</p>
+                    <button class="flex gap-2 items-center justify-center p-2">
+                        <p class="text-md text-[#405FF2]">View Details</p>
+                        <img src="assets/featured-listing/icons/blue-arrow.svg" alt="blue-arrow">
+                    </button>
+            </div>
+            </div>
+
+            <div class="card flex flex-col gap-2 rounded-lg border-1 border-[#E1E1E1]">
+                <img src="assets/featured-listing/cars/car4.svg" class="rounded-t-lg" alt="">
+                <div class="text-content p-2 gap-2">
+                    <p class="font-medium text-lg">New GLC – 2023</p>
+                    <p class="font-regular text-sm">4.0 D5 PowerPulse Momentum 5dr AW…</p>
+                </div> 
+
+                <div class="fact-icons p-2 border-t-1 border-b-1 border-[#E1E1E1] flex gap-2 justify-around items-center">
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/mil.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">15 Miles</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/fuel.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">Petrol</p>
+                    </div>
+                    <div class="icon-1 flex flex-col gap-2 items-center justify-center">
+                        <img src="assets/featured-listing/icons/gear.svg" class="h-[30px] w-[40px]" alt="">
+                        <p class="text-m">CVT</p>
+                    </div>
+                </div>
+
+                <div class="checkout p-2 flex gap-2 items-center justify-around">
+                    <p class="text-lg font-bold">$15000</p>
+                    <button class="flex gap-2 items-center justify-center p-2">
+                        <p class="text-md text-[#405FF2]">View Details</p>
+                        <img src="assets/featured-listing/icons/blue-arrow.svg" alt="blue-arrow">
+                    </button>
+            </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="nav-buttons flex gap-8 mt-5">
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+                <img src="assets/featured-listing/icons/left.svg" alt="leftbutton">
+            </button>
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+                <img src="assets/featured-listing/icons/right.svg" alt="rightbutton">
+            </button>
+        </div>
+
+
+
+    </section>
+
+    <!-- Search-Over-Section -->
+    <section class="search-over-section flex flex-col bg-[#050B20] text-white py-10 rounded-lg px-6 md:px-10 mb-20">
+        <div class="top-div flex flex-col md:flex-row gap-6 md:gap-30 mt-8 md:ml-20 mb-10 items-center">
+            <div class="left-section flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start text-center md:text-left">
+                <div class="search-icon w-10 h-10 md:w-auto md:h-auto">
+                    <img src="assets/search-over/search.svg" class="w-full h-full" alt="search-icon">
+                </div>
+                <div class="search-text text-white flex flex-col gap-2">
+                    <p class="text-2xl md:text-3xl font-bold">Search Over 150,000 vehicles</p>
+                    <p class="text-sm">Choose from thousands of trusted used cars and vans across <br class="hidden md:block">
+                        the UK, from our national network of vetted dealers.</p>
+                </div>
+            </div>
+            <div class="right-section flex flex-col md:flex-row gap-4">
+                <button class="bg-[#405FF2] rounded-lg p-4 flex gap-2 items-center justify-center w-full md:w-auto">
+                    <p class="text-white">Search Cars</p>
+                    <img src="assets/search-over/arrow.svg" alt="arrow-icon">
+                </button>
+                <button class="bg-[#405FF2] p-4 rounded-lg flex gap-2 items-center justify-center w-full md:w-auto">
+                    <p class="text-white">Search Vans</p>
+                    <img src="assets/search-over/arrow.svg" alt="arrow-icon">
+                </button>
+            </div>
+        </div>
+        <div class="bottom-div md:ml-20 mb-10 flex flex-col gap-6 text-center md:text-left">
+            <div class="title-div">
+                <p class="text-lg font-bold text-white">Or browse by type:</p>
+            </div>
+            <div class="types-div flex flex-wrap justify-center md:justify-start gap-4">
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">Automatic Cars</button>
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">SUVs</button>
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">Electric Cars</button>
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">New in Stock</button>
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">Petrol</button>
+                <button class="p-5 border-2 rounded-2xl text-white bg-[#050B20]" style="border-color: rgba(255, 255, 255, 0.15);">Diesel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose-Us-Section -->
+    <section class="choose-us-section mb-20 flex flex-col items-center justify-center">
+        <div class="choose-us-title">
+            <p class="text-3xl font-bold">Why Choose Us?</p>
+        </div>
+        <div class="choose-us-cards grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mx-20 p-10">
+            <div class="choose-i1 flex flex-col gap-3">
+                <img src="assets/choose-us/1.svg" class="h-[60px] w-[60px]" alt="choose-1">
+                <p class="text-l font-bold">Best Price Guarantee</p>
+                <p class="text-m">Our prices are always competitive and we offer additional discounts and special offers.</p>
+            </div>
+            <div class="choose-i2 flex flex-col gap-3">
+                <img src="assets/choose-us/2.svg" class="h-[60px] w-[60px]" alt="choose-1">
+                <p class="text-l font-bold">Trusted Car Dealership</p>
+                <p class="text-m">Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+            <div class="choose-i1 flex flex-col gap-3">
+                <img src="assets/choose-us/3.svg" class="h-[60px] w-[60px]" alt="choose-1">
+                <p class="text-l font-bold">Transparent Pricing</p>
+                <p class="text-m">Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+            <div class="choose-i1 flex flex-col gap-3">
+                <img src="assets/choose-us/4.svg" class="h-[60px] w-[60px]" alt="choose-1"> 
+                <p class="text-l font-bold">Expert Car Service</p>
+                <p class="text-m">Our stress-free finance department that can
+                    find financial solutions to save you money.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section mb-10 bg-[#F9FBFC] py-20 flex flex-col">
+        <div class="test-header flex justify-between mx-25">
+            <p class="font-bold text-2xl">What our customers say</p>
+            <p class="font-regular text-md">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
+        </div>
+        <div class="testimonial-container mt-10 mx-25 gap-8 grid grid-cols-1 md:grid-cols-3">
+            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
+                <div class="heading-review flex gap-2 items-center justify-between">
+                    <p class="text-2xl">Great Work</p>
+                    <img src="assets/testimonials/quote.svg" alt="quote">
+                </div>
+                <div class="heading-content">
+                    “Amazing design, easy to customize and a design
+                    quality superlative account on its cloud platform for
+                    the optimized performance. And we didn’t on our
+                    original designs.”
+                </div>
+                <div class="author-details flex gap-2 align-center">
+                    <div class="img-container">
+                        <img src="assets/testimonials/team/1.svg" class="rounded-4xl" alt="">
+                    </div>
+                    <div class="auth-container flex flex-col align-center justify-center">
+                        <p>Leslie Alexander</p>
+                        <p>Facebook</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
+                <div class="heading-review flex gap-2 items-center justify-between">
+                    <p class="text-2xl">Awesome Design</p>
+                    <img src="assets/testimonials/quote.svg" alt="quote">
+                </div>
+                <div class="heading-content">                      
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam sed
+                    do eiusmod”
+                </div>
+                <div class="author-details flex gap-2 align-center">
+                    <div class="img-container">
+                        <img src="assets/testimonials/team/2.svg" class="rounded-4xl" alt="">
+                    </div>
+                    <div class="auth-container flex flex-col align-center justify-center">
+                        <p>Floyd Miles</p>
+                        <p>Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
+                <div class="heading-review flex gap-2 items-center justify-between">
+                    <p class="text-2xl">Good Job</p>
+                    <img src="assets/testimonials/quote.svg" alt="quote">
+                </div>
+                <div class="heading-content">
+                    “But I must explain to you how all this mistaken idea
+                    of denouncing pleasure and praising pain was born
+                    and I will give you a complete account of the
+                    system.”
+                </div>
+                <div class="author-details flex gap-2 align-center">
+                    <div class="img-container">
+                        <img src="assets/testimonials/team/3.svg" class="rounded-4xl" alt="">
+                    </div>
+                    <div class="auth-container flex flex-col align-center justify-center">
+                        <p>Dianne Russell</p>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-buttons flex gap-8 mt-5 mx-20">
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+                <img src="assets/featured-listing/icons/left.svg" alt="leftbutton">
+            </button>
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+                <img src="assets/featured-listing/icons/right.svg" alt="rightbutton">
+            </button>
+        </div>
+    </section>  
+
+    <!-- Our Team Section -->
+    <section class="our-team mb-20">
+        <div class="heading flex justify-between mx-25">
+            <p class="text-2xl font-bold">Our Team</p>
+            <button class="flex gap-2 space-between items-center justify-center p-2 ">
+                <p>View All</p>
+                <img src="assets/team-info/arrow.svg" alt="">
+            </button>
+          
+        </div>
+        <div class="team-info grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto px-20 py-10">
+            <div class="mem-1 flex flex-col gap-4">
+                <img src="assets/team-info/mem1.svg" alt="">
+                <div class="text">
+                    <p class="text-xl font-medium">Courtney Henry</p>
+                    <p class="text-m">Development Manager</p>
+                </div>
+            </div>
+            <div class="mem-1 flex flex-col gap-4">
+                <img src="assets/team-info/mem2.svg" alt="">
+                <div class="text">
+                    <p class="text-xl font-medium">Jerome Bell</p>
+                    <p class="text-m">Software Tester</p>
+                </div>
+            </div>
+            <div class="mem-1 flex flex-col gap-4">
+                <img src="assets/team-info/mem3.svg" alt="">
+                <div class="text">
+                    <p class="text-xl font-medium">Arlene McCoy</p>
+                    <p class="text-m">Software Developer</p>
+                </div>
+            </div>
+            <div class="mem-1 flex flex-col gap-4">
+                <img src="assets/team-info/mem4.svg" alt="">
+                <div class="text">
+                    <p class="text-xl font-medium">Jenny Wilson</p>
+                    <p class="text-m">UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact-map-details -->
+    <section class="footer-above relative">
+        <div class="img-container">    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.549116499041!2d78.38152319999999!3d17.4334127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e152224b79%3A0xf4ab3bded078553b!2sEPAM!5e0!3m2!1sen!2sin!4v1740400547679!5m2!1sen!2sin" class="w-full h-[500px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="text-container p-8 flex flex-col rounded-sm bg-white md:w-1/2 sm:w-1/2 lg:w-1/4 absolute top-10 left-10 lg:left-40 bottom-16">
+            <p class="text-2xl lg:text-[26px] font-bold">Get in Touch</p>
+            <div class="sub-content-text text-sm lg:text-m flex flex-col gap-2">
+                <p>Contact our Sales Department</p>
+                <div class="sub-content flex gap-2 rounded-sm border-2 p-2">
+                    <img class="h-6 w-6" src="assets/phone-icon.png" alt="phone icon">
+                    <p class="flex items-center">+76 956 039 999</p>
+                </div>
+                <p>Monday: 9:00-13:00</p>
+                <p>Tuesday: 9:00-13:00</p>
+                <p>Wednesday: 9:00-13:00</p>
+                <p>Thursday: 9:00-13:00</p>
+                <p>Friday: 9:00-13:00</p>
+                <p>Saturday: 9:00-13:00</p>
+                <p>Sunday: CLOSED</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mail-Section -->
+    <section class="mail-section flex flex-col items-center justify-center bg-[#050B20] text-white py-10">
+        <div class="mail-text text-center">
+            <p class="text-2xl">Join BoxCar</p>
+            <p class="text-l">Receive pricing updates, shopping tips & more</p>
+        </div>
+
+        <div class="mail-input flex bg-white rounded-xl mt-2 px-5 py-3">
+            <input type="email" placeholder="Your email address" class="placeholder:text-gray-500 rounded-l-lg px-4 py-3 lg:w-80 text-black bg-white focus:outline-none">
+            <button class="bg-[#405FF2] hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-medium">Sign Up</button>        
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="line bg-[#050B20] flex items-center justify-center">
+        <div class="w-[80%] h-[1px] center bg-gray-700"></div>
+        </div>
+        <div class="w-full mx-auto px-30 bg-[#050B20] text-white py-10">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8">
+                
+                <!-- Column 1 -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Company</h2>
+                    <ul class="space-y-2 text-white text-sm">
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">About Us</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Blog</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Services</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">FAQs</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Terms</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Contact Us</p></a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Quick Links</h2>
+                    <ul class="space-y-2 text-white text-sm">
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Get in Touch</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Help center</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Live chat</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">How it works</p></a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-4 text-white">Our Brands</h2>
+                    <ul class="space-y-2 text-white text-sm">
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Toyota</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Privacy Policy</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Terms & Conditions</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Help Center</p></a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Vehicles Type</h2>
+                    <ul class="space-y-2 text-white text-sm">
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Sedan</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Hatchback</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">SUV</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Hybrid</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Electric</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Coupe</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Truck</p></a></li>
+                        <li><a href="#" class="text-white hover:text-grey"><p class="text-white">Convertible</p></a></li>  
+                    </ul>
+                </div>
+                
+
+                <!-- Column 5 -->
+                <div class="flex flex-col gap-3 col-span-2 md:col-span-1">
+                    <div class="head1">
+                        <h2 class="text-lg font-semibold mb-4">Our Mobile App</h2>
+                        <div class="store-download flex-col items-center justify-center gap-2">
+                            <a href=""><img src="assets/footer/apple.svg" class="mb-2" alt="apple-store"></a>
+                            <a href=""><img src="assets/footer/google.svg" alt="google-store"></a>
+                        </div>
+                    </div>
+                    <div class="head2">
+                        <h2 class="text-lg font-semibold mb-4">Connect With Us</h2>
+                        <a href=""><img src="assets/footer/social.svg" alt="social-icons"></a>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="copyright border-t border-gray-700 w-full mx-auto bg-[#050B20] text-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-2 p-5 flex justify-around items-center text-center">
+            <div class="px-6 py-2">
+                <p> &copy; 2023 Boxcars.com. All rights reserved.</p>
+            </div>
+            <div class="div flex items-center justify-center gap-2">
+                <p>Terms & Conditions</p>
+                <img src="assets/footer/dot.svg" alt="dot"> 
+                <p>Privacy Notice</p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+</html>
