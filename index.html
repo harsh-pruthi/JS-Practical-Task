@@ -10,12 +10,15 @@
 </head>
 <body class="font-dmSans m-0 p-0 border-box">
 
-    <!-- Hero-Section -->
-    <main class="relative">
-    
-        <div class="nav-container flex absolute justify-around p-5 w-full">
-            <div class="nav-left flex gap-4 align-center justify-center">
-                <img src="assets/main/logo.svg" alt="brand-icon">
+    <main class="bg-[url('assets/main/car-cover.svg')] h-[90vh] bg-cover">
+        <nav class="flex justify-between items-center p-5 w-full bg-white shadow-md">
+            <div class="flex items-center gap-4">
+                <img src="assets/main/logo.svg" alt="brand-icon" class="h-10">
+                <button id="menuToggle" class="md:hidden text-xl focus:outline-none">
+                    &#9776;
+                </button>
+            </div>
+            <div id="navMenu" class="hidden md:flex md:items-center md:gap-6">
                 <p class="text-m font-regular">Home</p>
                 <p class="text-m font-regular">Listings</p>
                 <p class="text-m font-regular">Blog</p>
