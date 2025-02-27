@@ -1,44 +1,59 @@
-[
-    {
-        "title": "Great Work",
-        "descrition": "“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”",
-        "img": "assets/testimonials/team/1.svg",
-        "name":"Leslie Alexander",
-        "job":"Facebook"
-    },
-    {
-        "title": "Awesome Design",
-        "descrition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod”",
-        "img": "assets/testimonials/team/2.svg",
-        "name":"Floyd Miles",
-        "job":"Designer"
-    },
-    {
-        "title": "Good Job",
-        "descrition": "“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.”",
-        "img": "img/testimonials/3.jpg",
-        "name":"Dianne Russell",
-        "job":"Marketing"
-    },
-    {
-        "title": "Awesome Design",
-        "descrition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod”",
-        "img": "img/testimonials/2.jpg",
-        "name":"Floyd Miles",
-        "job":"Designer"
-    },
-    {
-        "title": "Good Job",
-        "descrition": "“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.”",
-        "img": "img/testimonials/3.jpg",
-        "name":"Dianne Russell",
-        "job":"Marketing"
-    },
-    {
-        "title": "Great Work",
-        "descrition": "“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”",
-        "img": "img/testimonials/1.jpg",
-        "name":"Leslie Alexander",
-        "job":"Facebook"
-    }
-]
+{
+    "testimonials": [
+        {
+            "title": "Great Work",
+            "content": "Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn't on our original designs.",
+            "author": {
+                "name": "Leslie Alexander",
+                "role": "Facebook",
+                "image": "assets/testimonials/team/1.svg"
+            }
+        },
+        {
+            "title": "Awesome Design",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod",
+            "author": {
+                "name": "Floyd Miles",
+                "role": "Designer",
+                "image": "assets/testimonials/team/2.svg"
+            }
+        },
+        {
+            "title": "Good Job",
+            "content": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
+            "author": {
+                "name": "Dianne Russell",
+                "role": "Marketing",
+                "image": "assets/testimonials/team/3.svg"
+            }
+        },
+        {
+            "title": "Awesome Design",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod",
+            "author": {
+                "name": "Floyd Miles",
+                "role": "Designer",
+                "image": "assets/testimonials/team/2.svg"
+            }
+        },
+        {
+            "title": "Good Job",
+            "content": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
+            "author": {
+                "name": "Dianne Russell",
+                "role": "Marketing",
+                "image": "assets/testimonials/team/3.svg"
+            }
+        },
+        {
+            "title": "Great Work",
+            "content": "Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn't on our original designs.",
+            "author": {
+                "name": "Leslie Alexander",
+                "role": "Facebook",
+                "image": "assets/testimonials/team/1.svg"
+            }
+        }
+       
+    ]
+} 

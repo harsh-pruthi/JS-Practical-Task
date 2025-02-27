@@ -1,6 +1,7 @@
 const teamContainer = document.getElementById('teamContainer');
 const viewToggleBtn = document.getElementById('viewToggleBtn');
 const viewBtnText = document.getElementById('viewBtnText');
+const viewTeamBtn = document.getElementById('team-arrow');
 
 let allTeamMembers = [];
 let isViewingAll = false;
@@ -8,9 +9,9 @@ const count = 4;
 
 async function fetchTeamData() {
     try {
-        const response = await fetch('team-data.json');
+        const response = await fetch('json/team-data.json');
         const data = await response.json();
-        allTeamMembers = data.teamSection.members;
+        allTeamMembers = data.members;
         displayTeamMembers();
     } catch (error) {
         console.error('Error loading team data:', error);
@@ -36,6 +37,7 @@ function displayTeamMembers() {
 function toggleView() {
     isViewingAll = !isViewingAll;
     viewBtnText.textContent = isViewingAll ? 'View Less' : 'View All';
+    isViewingAll?viewTeamBtn.classList.add('rotate-90'):viewTeamBtn.classList.remove('rotate-90');
     displayTeamMembers();
 }
 

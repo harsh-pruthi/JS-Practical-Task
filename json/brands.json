@@ -1,28 +1,46 @@
 {
-    "brands": [
+    "brands":[
         {
-            "name": "Audi",
-            "image_src": "assets/explore-prem-brands/1.svg"
+            "id":"1",
+            "name":"Audi",
+            "image":"assets/explore-prem-brands/1.svg"
         },
         {
-            "name": "BMW",
-            "image_src": "assets/explore-prem-brands/2.svg"
+            "id":"2",
+            "name":"BMW",
+            "image":"assets/explore-prem-brands/2.svg"
         },
         {
-            "name": "Ford",
-            "image_src": "assets/explore-prem-brands/3.svg"
+            "id":"3",
+            "name":"Ford",
+            "image":"assets/explore-prem-brands/3.svg"
         },
         {
-            "name": "Mercedes Benz",
-            "image_src": "assets/explore-prem-brands/4.svg"
+            "id":"4",
+            "name":"Mercedes Benz",
+            "image":"assets/explore-prem-brands/4.svg"
         },
         {
-            "name": "Peugeot",
-            "image_src": "assets/explore-prem-brands/5.svg"
+            "id":"5",
+            "name":"Peugeot",
+            "image":"assets/explore-prem-brands/5.svg"
         },
         {
-            "name": "Volkswagen",
-            "image_src": "assets/explore-prem-brands/6.svg"
+            "id":"6",
+            "name":"Volkswagen",
+            "image":"assets/explore-prem-brands/6.svg"
+        },
+        {
+            "id":"7",
+            "name":"Mercedes Benz",
+            "image":"assets/explore-prem-brands/4.svg"
+        },
+        {
+            "id":"3",
+            "name":"Ford",
+            "image":"assets/explore-prem-brands/3.svg"
         }
+
+
     ]
 }

@@ -1,0 +1,41 @@
+{
+    "members": [
+      {
+        "id": 1,
+        "name": "Courtney Henry",
+        "role": "Development Manager",
+        "image": "assets/team-info/mem1.svg"
+      },
+      {
+        "id": 2,
+        "name": "Jerome Bell",
+        "role": "Software Tester", 
+        "image": "assets/team-info/mem2.svg"
+      },
+      {
+        "id": 3,
+        "name": "Arlene McCoy",
+        "role": "Software Developer",
+        "image": "assets/team-info/mem3.svg"
+      },
+      {
+        "id": 4,
+        "name": "Jenny Wilson",
+        "role": "UI/UX Designer",
+        "image": "assets/team-info/mem4.svg"
+      },
+      {
+        "id": 5,
+        "name": "Arlene McCoy",
+        "role": "Software Developer",
+        "image": "assets/team-info/mem3.svg"
+      },
+      {
+        "id": 6,
+        "name": "Jerome Bell",
+        "role": "Software Tester", 
+        "image": "assets/team-info/mem2.svg"
+      }
+      
+    ]
+} 

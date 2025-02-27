@@ -10,22 +10,38 @@
 </head>
 <body class="font-dmSans m-0 p-0 border-box">
 
-    <main class="bg-[url('assets/main/car-cover.svg')] h-[90vh] bg-cover">
-        <nav class="flex justify-between items-center p-5 w-full bg-white shadow-md">
-            <div class="flex items-center gap-4">
-                <img src="assets/main/logo.svg" alt="brand-icon" class="h-10">
-                <button id="menuToggle" class="md:hidden text-xl focus:outline-none">
-                    &#9776;
+    <main class="bg-[url('assets/main/car-cover.svg')] h-[90vh] bg-cover md:block">
+        
+        <div class="nav-container hidden md:flex justify-around p-5 w-full">
+            <div class="nav-left flex gap-4 align-center justify-center">
+                <img src="assets/main/logo.svg" alt="brand-icon">
+                <button class="flex flex-row gap-1 justify-center items-center">
+                    <p class="text-m font-regular">Home</p>
+                    <img src="assets/main/icons/dropdown.svg" alt="">
                 </button>
+                <button class="flex flex-row gap-1 justify-center items-center">
+                    <p class="text-m font-regular">Listings</p>
+                    <img src="assets/main/icons/dropdown.svg" alt="">
+                </button>
+                <button class="flex flex-row gap-1 justify-center items-center">
+                    <p class="text-m font-regular">Blog</p>
+                    <img src="assets/main/icons/dropdown.svg" alt="">
+                </button>
+                <button class="flex flex-row gap-1 justify-center items-center">
+                    <p class="text-m font-regular">Pages</p>
+                    <img src="assets/main/icons/dropdown.svg" alt="">
+                </button>
+                <button class="flex flex-row gap-1 justify-center items-center">
+                    <a class="text-black"><p class="text-black">About</p></a>
+                  </button>
+                  <button class="flex flex-row gap-1 justify-center items-center">
+                    <a href="#contactMapDetails" class="text-black"><p class="text-black">Contact</p></a>
+                  </button>
+               
+                 
+
             </div>
-            <div id="navMenu" class="hidden md:flex md:items-center md:gap-6">
-                <p class="text-m font-regular">Home</p>
-                <p class="text-m font-regular">Listings</p>
-                <p class="text-m font-regular">Blog</p>
-                <p class="text-m font-regular">Pages</p>
-                <p class="text-m font-regular">About</p>
-                <p class="text-m font-regular">Contact</p>
-            </div>
+            
             <div class="nav-right flex gap-4 items-center justify-center">
                 <div class="flex gap-1 items-center justify-center">
                     <img src="assets/main/icons/sign-in.png" alt="sign-in">
@@ -35,24 +51,26 @@
                     <button class="text-white border-1 border-[white] px-2 py-1 rounded-lg">Submit Listing</button>
                 </div>
             </div>
+           
         </div>
-        <div class="hero-section absolute mx-20 my-20 p-20 flex flex-col gap-4 space-around">
+        <div class="hero-section mx-10 my-5 md:mx-20 md:my-10 p-20 flex flex-col gap-4">
                 <p class="text-m">Find cars for sale and for rent near you</p>
+               
                 <p class="text-4xl font-bold">4,675 Vehicles</p>
                 <p class="text-4xl font-bold">Available</p>
                 <div class="buttons-container flex gap-4 items-center justify-start">
-                    <button class="flex items-center justify-center gap-2 p-3 bg-[#405FF2] rounded-xl">
+                    <button class="flex items-center justify-center gap-2 p-3 bg-[#405FF2] rounded-xl cursor-pointer" id="viewInventoryBtn">
                         <p class="text-lg text-white font-regular">View Inventory</p>
                         <img src="assets/main/whitearrow.svg" alt="whitearrow">
                     </button>
-                    <button class="flex items-center justify-center gap-2 p-3 bg-white border-1 border-[#050B20] rounded-xl">
+                    <button class="flex items-center justify-center gap-2 p-3 bg-white border-1 border-[#050B20] rounded-xl cursor-pointer" id="contactUsBtn">
                         <p>Contact Us</p>
                         <img src="assets/main/bluearrow.svg" alt="blue-arrow">
                     </button>
                 </div>
                 <div class="sub-section flex flex-col gap-3">
                     <p class="text-regular font-regular">Or Browse Featured Model</p>
-                    <div class="btn-categories flex gap-2">
+                    <div class="btn-categories flex flex-col md:flex-row gap-2">
                         <button class="flex gap-2 items-center justify-center px-2 border-1 border-[#050B20] bg-white rounded-xl">
                             <img src="assets/main/car-logos/suv.svg" alt="">
                             <p>SUV</p>
@@ -73,61 +91,23 @@
                             <img src="assets/main/car-logos/hybrid.svg" alt="">
                             <p>Hybrid</p>
                         </button>
-                       
                     </div>
                 </div>
-        </div>
-
-        
-    
-                    
-            <img src="assets/main/car-cover.svg" alt="">
-            
-            
-        </div>
 
     </main>
 
-    
+
     <!-- Explore-Brands -->
     <section class="explore-brands">
         <div class="brands-heading flex justify-between mx-5 p-20 gap-2">
             <p class="text-3xl font-bold">Explore Our Premium Brands</p>
-            <button class="flex gap-2 items-center justify-center p-2 ">
-                <p class="text-m font-medium">Show all brands</p>
-                <img src="assets/explore-prem-brands/arrow.svg" alt="">
+            <button id="brandsToggle" class="flex cursor-pointer gap-2 items-center justify-center p-2 ">
+                <p id="brands-btn-txt" class="text-m font-medium">Show all brands</p>
+                <img src="assets/explore-prem-brands/arrow.svg" id="arrow-b" class="" alt="">
             </button>
         </div>
-        <div class="brands-container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 mx-20 px-10 flex justify-left flex-col">
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/1.svg" alt="brand-1">
-                <p class="text-l font-semibold">Audi</p>
-            </div>
-
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/2.svg" alt="brand-1">
-                <p class="text-l font-semibold">BMW</p>
-            </div>
-
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/3.svg" alt="brand-1">
-                <p class="text-l font-semibold">Ford</p>
-            </div>
-
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/4.svg" alt="brand-1">
-                <p class="text-l font-semibold">Mercedes Benz</p>
-            </div>
-
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/5.svg" alt="brand-1">
-                <p class="text-l font-semibold">Peugeot</p>
-            </div>
-
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/explore-prem-brands/6.svg" alt="brand-1">
-                <p class="text-l font-semibold">Volkswagen</p>
-            </div>
+        <div id="brands-container" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-4 mx-20 px-10 flex justify-left flex-col">
+        </div>    
     </section>
 
     <!-- Our-Services -->
@@ -137,16 +117,16 @@
         </div>
         <div class="images-container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5 p-10">
             <!-- Card1 -->
-            <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="assets/our-services/car1.svg" class="rounded-2xl" alt="service-1">
-                <p class="text-l font-semibold">2024 BMW ALPINA XB7 with exclusive…</p>
-                <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
-                    accumsan nec.</p>
-                <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
-                    <p class="text-[#405FF2] font-medium">View</p>
-                    <img src="assets/our-services/arrow.svg" alt="">
-                </button>
-            </div>
+                <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
+                    <img src="assets/our-services/car1.svg" class="rounded-2xl" alt="service-1">
+                    <p class="text-l font-semibold">2024 BMW ALPINA XB7 with exclusive…</p>
+                    <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
+                        accumsan nec.</p>
+                    <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
+                        <p class="text-[#405FF2] font-medium">View</p>
+                        <img src="assets/our-services/arrow.svg" alt="">
+                    </button>
+                </div>
             
             <!-- Card2 -->
             <div class="card-container flex flex-col justify-around gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
@@ -166,19 +146,20 @@
                 <p class="text-l font-semibold">BMW X5 Gold 2024 Sport Review: Light o…</p>
                 <p class="text-m">Aliquam hendrerit sollicitudin purus, quis rutrum mi
                     accumsan nec.</p>
-                <button class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
+                <button id="view-car" class="flex gap-2 justify-center items-center border-1 rounded-xl p-2 border-[#405FF2]">
                     <p class="text-[#405FF2] font-medium">View</p>
                     <img src="assets/our-services/arrow.svg" alt="">
                 </button>
             </div>
-
         </div>
     </section>
+    
+
 
     <!-- Get-Fair-Price -->
     <section class="fair-sell-section p-10 mx-10 mb-10 grid grid-cols-1 md:grid-cols-2 gap-15">
-        <div class="left-container">
-            <img src="assets/sell/1.svg" class="" alt="videocar">
+        <div class="left-container relative cursor-pointer group" id="videoTrigger">
+            <img src="assets/sell/1.svg" class="w-full" alt="videocar">
         </div>
         <div class="right-container flex flex-col gap-8">
             <div class="text-top flex flex-col gap-2">
@@ -193,7 +174,7 @@
                 <ul class="flex flex-col gap-2">
                     <li class="flex gap-2">
                         <img src="assets/sell/tick.svg" alt="">
-                        <p class="text-md font-medium">We are the UK’s largest provider, with more patrols in more places</p>
+                        <p class="text-md font-medium">We are the UK's largest provider, with more patrols in more places</p>
                     </li>
                     <li class="flex gap-2">
                         <img src="assets/sell/tick.svg" alt="">
@@ -206,7 +187,7 @@
                 </ul>
             </div>
             <div class="btn-me">
-                <button class="bg-[#405FF2] p-4 rounded-lg flex gap-2 items-center justify-center">
+                <button onclick="scrollToContact()" class="bg-[#405FF2] cursor-pointer p-4 rounded-lg flex gap-2 items-center justify-center">
                     <p class="text-white text-md font-medium">Get Started</p>
                     <img src="assets/sell/diagonal.svg" alt="">
                 </button>
@@ -215,6 +196,23 @@
         </div>
     </section>
 
+        <div id="videoPopup" class="fixed inset-0 z-50 hidden">
+            <div class="absolute inset-0 backdrop-blur-sm"></div>
+            
+            <div class="relative w-full h-full flex items-center justify-center p-4">
+                <div class="relative bg-black rounded-lg w-full max-w-4xl mx-auto">
+                    <button id="closeVideo" class="absolute cursor-pointer -top-12 right-0 text-black hover:text-gray-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    <div class="relative w-full pt-[56.25%]">
+                        <div id="videoContainer" class="absolute top-0 left-0 w-full h-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     <!-- Facts-Section -->
     <section class="facts-section grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 p-10 text-center">
         <div class="fact-1">
@@ -239,7 +237,7 @@
 
 
     <!-- Featured Listing -->
-    <section class="featured-listing p-10 mx-10 mb-10 flex flex-col gap-8">
+    <section class="featured-listing p-10 mx-10 mb-10 flex flex-col gap-8" id="featuredListing">
         <div class="featured-heading flex justify-between">
             <p class="text-3xl font-bold">Featured Listing</p>
             <button class="flex gap-2 items-center justify-center p-2 ">
@@ -383,11 +381,11 @@
         </div>
 
 
-        <div class="nav-buttons flex gap-8 mt-5">
-            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+        <div class="nav-buttons flex gap-8 mt-5 mx-20">
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 cursor-pointer rounded-4xl">
                 <img src="assets/featured-listing/icons/left.svg" alt="leftbutton">
             </button>
-            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+            <button class="border-1 border-[#E1E1E1] px-5 py-2 cursor-pointer rounded-4xl">
                 <img src="assets/featured-listing/icons/right.svg" alt="rightbutton">
             </button>
         </div>
@@ -409,15 +407,24 @@
                         the UK, from our national network of vetted dealers.</p>
                 </div>
             </div>
-            <div class="right-section flex flex-col md:flex-row gap-4">
-                <button class="bg-[#405FF2] rounded-lg p-4 flex gap-2 items-center justify-center w-full md:w-auto">
-                    <p class="text-white">Search Cars</p>
-                    <img src="assets/search-over/arrow.svg" alt="arrow-icon">
-                </button>
-                <button class="bg-[#405FF2] p-4 rounded-lg flex gap-2 items-center justify-center w-full md:w-auto">
-                    <p class="text-white">Search Vans</p>
-                    <img src="assets/search-over/arrow.svg" alt="arrow-icon">
-                </button>
+            <div class="search flex-col flex items-center align-center gap-3">
+                <div class="right-section flex flex-col md:flex-row gap-4">
+                    <button id="search-cars-trigger" class="bg-[#405FF2] cursor-pointer rounded-lg p-4 flex gap-2 items-center justify-center w-full md:w-auto">
+                        <p class="text-white">Search Cars</p>
+                        <img src="assets/search-over/arrow.svg" id="search-cars-arrow" alt="arrow-icon">    
+                    </button>
+                    <button class="bg-[#405FF2] p-4 rounded-lg flex gap-2 items-center justify-center w-full md:w-auto">
+                        <p class="text-white">Search Vans</p>
+                        <img src="assets/search-over/arrow.svg" alt="arrow-icon">
+                    </button>
+                </div>
+                <!-- Search Container -->
+                <div id="search-container" class="hidden flex items-center align-center gap-2 ">
+                    <input type="text" class="bg-white items-center justify-center rounded-lg text-black p-2">
+                    <button class="cursor-pointer items-center justify-center">
+                        <img src="assets/search-over/search.svg" class="h-1/2 w-1/2" alt="search-icon">
+                    </button>
+                </div>
             </div>
         </div>
         <div class="bottom-div md:ml-20 mb-10 flex flex-col gap-6 text-center md:text-left">
@@ -475,75 +482,13 @@
             <p class="font-regular text-md">Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star reviews</p>
         </div>
         <div class="testimonial-container mt-10 mx-25 gap-8 grid grid-cols-1 md:grid-cols-3">
-            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
-                <div class="heading-review flex gap-2 items-center justify-between">
-                    <p class="text-2xl">Great Work</p>
-                    <img src="assets/testimonials/quote.svg" alt="quote">
-                </div>
-                <div class="heading-content">
-                    “Amazing design, easy to customize and a design
-                    quality superlative account on its cloud platform for
-                    the optimized performance. And we didn’t on our
-                    original designs.”
-                </div>
-                <div class="author-details flex gap-2 align-center">
-                    <div class="img-container">
-                        <img src="assets/testimonials/team/1.svg" class="rounded-4xl" alt="">
-                    </div>
-                    <div class="auth-container flex flex-col align-center justify-center">
-                        <p>Leslie Alexander</p>
-                        <p>Facebook</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
-                <div class="heading-review flex gap-2 items-center justify-between">
-                    <p class="text-2xl">Awesome Design</p>
-                    <img src="assets/testimonials/quote.svg" alt="quote">
-                </div>
-                <div class="heading-content">                      
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam sed
-                    do eiusmod”
-                </div>
-                <div class="author-details flex gap-2 align-center">
-                    <div class="img-container">
-                        <img src="assets/testimonials/team/2.svg" class="rounded-4xl" alt="">
-                    </div>
-                    <div class="auth-container flex flex-col align-center justify-center">
-                        <p>Floyd Miles</p>
-                        <p>Designer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
-                <div class="heading-review flex gap-2 items-center justify-between">
-                    <p class="text-2xl">Good Job</p>
-                    <img src="assets/testimonials/quote.svg" alt="quote">
-                </div>
-                <div class="heading-content">
-                    “But I must explain to you how all this mistaken idea
-                    of denouncing pleasure and praising pain was born
-                    and I will give you a complete account of the
-                    system.”
-                </div>
-                <div class="author-details flex gap-2 align-center">
-                    <div class="img-container">
-                        <img src="assets/testimonials/team/3.svg" class="rounded-4xl" alt="">
-                    </div>
-                    <div class="auth-container flex flex-col align-center justify-center">
-                        <p>Dianne Russell</p>
-                        <p>Marketing</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Dynamic testimonials will be rendered here -->
         </div>
         <div class="nav-buttons flex gap-8 mt-5 mx-20">
-            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+            <button id="left-btn" class="cursor-pointer border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
                 <img src="assets/featured-listing/icons/left.svg" alt="leftbutton">
             </button>
-            <button class="border-1 border-[#E1E1E1] px-5 py-2 rounded-4xl">
+            <button id="right-btn" class="border-1 cursor-pointer border-[#E1E1E1] px-5 py-2 rounded-4xl">
                 <img src="assets/featured-listing/icons/right.svg" alt="rightbutton">
             </button>
         </div>
@@ -553,46 +498,17 @@
     <section class="our-team mb-20">
         <div class="heading flex justify-between mx-25">
             <p class="text-2xl font-bold">Our Team</p>
-            <button class="flex gap-2 space-between items-center justify-center p-2 ">
-                <p>View All</p>
-                <img src="assets/team-info/arrow.svg" alt="">
+            <button id="viewToggleBtn" class="flex gap-2 cursor-pointer space-between items-center justify-center p-2">
+                <p id="viewBtnText">View All</p>
+                <img src="assets/team-info/arrow.svg" id="team-arrow" alt="">
             </button>
-          
         </div>
-        <div class="team-info grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto px-20 py-10">
-            <div class="mem-1 flex flex-col gap-4">
-                <img src="assets/team-info/mem1.svg" alt="">
-                <div class="text">
-                    <p class="text-xl font-medium">Courtney Henry</p>
-                    <p class="text-m">Development Manager</p>
-                </div>
-            </div>
-            <div class="mem-1 flex flex-col gap-4">
-                <img src="assets/team-info/mem2.svg" alt="">
-                <div class="text">
-                    <p class="text-xl font-medium">Jerome Bell</p>
-                    <p class="text-m">Software Tester</p>
-                </div>
-            </div>
-            <div class="mem-1 flex flex-col gap-4">
-                <img src="assets/team-info/mem3.svg" alt="">
-                <div class="text">
-                    <p class="text-xl font-medium">Arlene McCoy</p>
-                    <p class="text-m">Software Developer</p>
-                </div>
-            </div>
-            <div class="mem-1 flex flex-col gap-4">
-                <img src="assets/team-info/mem4.svg" alt="">
-                <div class="text">
-                    <p class="text-xl font-medium">Jenny Wilson</p>
-                    <p class="text-m">UI/UX Designer</p>
-                </div>
-            </div>
+        <div id="teamContainer" class="team-info grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto px-20 py-10">
         </div>
     </section>
 
     <!-- Contact-map-details -->
-    <section class="footer-above relative">
+    <section class="footer-above relative" id="contactMapDetails">
         <div class="img-container">    
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.549116499041!2d78.38152319999999!3d17.4334127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e152224b79%3A0xf4ab3bded078553b!2sEPAM!5e0!3m2!1sen!2sin!4v1740400547679!5m2!1sen!2sin" class="w-full h-[500px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -622,11 +538,30 @@
             <p class="text-l">Receive pricing updates, shopping tips & more</p>
         </div>
 
-        <div class="mail-input flex bg-white rounded-xl mt-2 px-5 py-3">
-            <input type="email" placeholder="Your email address" class="placeholder:text-gray-500 rounded-l-lg px-4 py-3 lg:w-80 text-black bg-white focus:outline-none">
-            <button class="bg-[#405FF2] hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-medium">Sign Up</button>        
+        <div class="email-container flex flex-col items-center gap-2">
+            <div class="mail-input flex flex-col bg-white rounded-xl mt-2 px-5 py-3">
+                <div class="flex">
+                    <input type="email" id="emailInput" placeholder="Your email address" class="flex flex-col placeholder:text-gray-500 rounded-l-lg px-4 py-3 lg:w-80 text-black bg-white focus:outline-none">
+                    <button id="signUpButton" class="bg-[#405FF2] hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-medium">Sign Up</button>
+                </div>
+                
+            </div>
+            <p id="warningMessage" class="text-red-500 text-sm mt-2"></p>
         </div>
+        
     </section>
+   
+     <!-- Email Subscription Popup -->
+     <div id="subscriptionPopup" class="hidden fixed inset-0 flex items-center justify-center backdrop-blur-sm z-50">
+        <div class="bg-white rounded-lg p-6 max-w-sm mx-4 relative backdrop-blur-sm shadow-lg">
+            <button id="closePopup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <div id="popupMessage" class="text-center mt-2"></div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -717,11 +652,25 @@
                 <p>Terms & Conditions</p>
                 <img src="assets/footer/dot.svg" alt="dot"> 
                 <p>Privacy Notice</p>
+                <button id="scrollToTop" class="cursor-pointer md:ml-30 bg-[#405FF2] text-white p-4 rounded-full shadow-lg transition-opacity duration-300 hover:bg-[#2b44c7] focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                    </svg>
+                </button>
             </div>
         </div>
-        
+       
     </footer>
 
 
+
+    <script src="scripts/searchCars.js"></script>
+    <script src="scripts/sellSection.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/teamSection.js"></script>
+    <script src="scripts/brandsSection.js"></script>
+    <script src="scripts/emailSub.js"></script>
+    <script src="scripts/testimonials.js"></script>
+    <script src="scripts/heroSection.js"></script>
 </body>
 </html>
