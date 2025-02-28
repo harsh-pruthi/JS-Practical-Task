@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyBPlhiRnFoQPo2VsfrcdUjLYg-0iKVIErY";
+const API_KEY = "";
 
 let chatHistory = [];
 
