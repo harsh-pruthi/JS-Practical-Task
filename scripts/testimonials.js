@@ -28,21 +28,21 @@ function renderTestimonials() {
         currentIndex + cardsPerPage
     );
     const testimonialHTML = currentTestimonials.map(testimonial => `
-        <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-4 p-6">
+        <div class="card1 flex bg-white shadow-lg rounded-xl flex-col gap-3 sm:gap-4 p-4 sm:p-6">
             <div class="heading-review flex gap-2 items-center justify-between">
-                <p class="text-2xl">${testimonial.title}</p>
-                <img src="assets/testimonials/quote.svg" alt="quote">
+                <p class="text-xl sm:text-2xl truncate">${testimonial.title}</p>
+                <img src="assets/testimonials/quote.svg" class="w-6 h-6 sm:w-auto sm:h-auto" alt="quote">
             </div>
-            <div class="heading-content">
+            <div class="heading-content text-sm sm:text-base line-clamp-4 sm:line-clamp-none">
                 "${testimonial.content}"
             </div>
-            <div class="author-details flex gap-2 align-center">
-                <div class="img-container">
-                    <img src="${testimonial.author.image}" class="rounded-4xl" alt="">
+            <div class="author-details flex gap-2 items-center">
+                <div class="img-container flex-shrink-0">
+                    <img src="${testimonial.author.image}" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full" alt="">
                 </div>
-                <div class="auth-container flex flex-col align-center justify-center">
-                    <p>${testimonial.author.name}</p>
-                    <p>${testimonial.author.role}</p>
+                <div class="auth-container flex flex-col justify-center">
+                    <p class="text-sm sm:text-base font-medium truncate">${testimonial.author.name}</p>
+                    <p class="text-xs sm:text-sm truncate">${testimonial.author.role}</p>
                 </div>
             </div>
         </div>

@@ -24,13 +24,13 @@ function displayBrands(){
 
     const brandsArray = isViewAll?allBrands:allBrands.slice(0, viewCount);
 
-    const brandsHTML = brandsArray.map(brand=>`
-            <div class="brand-card flex flex-col justify-center items-center gap-4 p-4 border-2 border-[#E9E9E9] rounded-lg">
-                <img src="${brand.image}" alt="brand-1">
-                <p class="text-l font-semibold">${brand.name}</p>
-            </div> 
+    const brandsHTML = brandsArray.map(brand => `
+        <div class="brand-card flex flex-col justify-center items-center gap-2 sm:gap-4 p-3 sm:p-4 border-2 border-[#E9E9E9] rounded-lg">
+            <img src="${brand.image}" class="max-w-full h-auto" alt="brand-1">
+            <p class="text-sm sm:text-l font-semibold text-center truncate">${brand.name}</p>
+        </div> 
     `).join('');
-
+    
     brandsContainer.innerHTML = brandsHTML;
 }
 

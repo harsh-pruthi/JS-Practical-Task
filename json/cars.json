@@ -1,0 +1,104 @@
+{
+    "cars": [
+      {
+        "name": "T-Cross - 2023",
+        "image": "assets/featured-listing/cars/car1.svg",
+        "price": "$15,000",
+        "mileage": "15 Miles",
+        "fuel": "Petrol",
+        "gear": "CVT",
+        "condition": "Any Cars",
+        "type": "Petrol",
+        "stockCondition": "NewInStock",
+        "featuredModel": "SUV",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "This car comes with a 3-year warranty."
+      },
+      {
+        "name": "C-Class – 2023",
+        "image": "assets/featured-listing/cars/car2.svg",
+        "price": "$150,000",
+        "mileage": "50 Miles",
+        "fuel": "Petrol",
+        "gear": "Automatic",
+        "condition": "New Cars",
+        "type": "Petrol",
+        "stockCondition": "NewInStock",
+        "featuredModel": "Sedan",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Includes premium sound system."
+      },
+      {
+        "name": "Ford Transit – 2021",
+        "image": "assets/featured-listing/cars/car3.svg",
+        "price": "$22,000",
+        "mileage": "2500 Miles",
+        "fuel": "Diesel",
+        "gear": "Manual",
+        "condition": "Used Cars",
+        "type": "Diesel",
+        "stockCondition": "NewInStock",
+        "featuredModel": "Hatchback",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Perfect for commercial use."
+      },
+      {
+        "name": "New GLC – 2023",
+        "image": "assets/featured-listing/cars/car4.svg",
+        "price": "$95,000",
+        "mileage": "50 Miles",
+        "fuel": "Petrol",
+        "gear": "Automatic",
+        "condition": "New Cars",
+        "type": "Petrol",
+        "stockCondition": "NewInStock",
+        "featuredModel": "SUV",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Equipped with advanced safety features."
+      },
+      {
+        "name": "Model X – 2023",
+        "image": "assets/featured-listing/cars/car1.svg",
+        "price": "$120,000",
+        "mileage": "10 Miles",
+        "fuel": "Electric",
+        "gear": "Automatic",
+        "condition": "Used Cars",
+        "type": "Electric",
+        "stockCondition": "NewInStock",
+        "featuredModel": "SUV",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Autopilot feature included."
+      },{
+        "name": "Model Y – 2024",
+        "image": "assets/featured-listing/cars/car1.svg",
+        "price": "$120,000",
+        "mileage": "10 Miles",
+        "fuel": "Hybrid",
+        "gear": "Automatic",
+        "condition": "Used Cars",
+        "type": "Electric",
+        "stockCondition": "NewInStock",
+        "featuredModel": "SUV",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Autopilot feature included."
+      },
+      {
+        "name": "Civic – 2022",
+        "image": "assets/featured-listing/cars/car2.svg",
+        "price": "$25,000",
+        "mileage": "5,000 Miles",
+        "fuel": "Petrol",
+        "gear": "Automatic",
+        "condition": "Used Cars",
+        "type": "Petrol",
+        "stockCondition": "NewInStock",
+        "featuredModel": "Sedan",
+        "tagline": "4.0 D5 PowerPulse Momentum 5dr AW…",
+        "additionalInfo": "Great fuel efficiency."
+      }
+ 
+    ]
+  }
+
+  
